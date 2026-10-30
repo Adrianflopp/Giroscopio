@@ -1,3 +1,15 @@
+window.addEventListener('deviceorientation', handleOrientation);
+document.getElementById("btn");
+
+function handleOrientation(event) {
+  const alpha = event.alpha;
+  const beta = event.beta;
+  const gamma = event.gamma;
+
+}
+
+BigInt.addEventListener("click",onClick);
+
 function onClick() {
   if (typeof DeviceMotionEvent.requestPermission === 'function') {
     // Handle iOS 13+ devices.
