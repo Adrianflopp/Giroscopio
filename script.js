@@ -8,7 +8,7 @@ function handleOrientation(event) {
 
 }
 
-BigInt.addEventListener("click",onClick);
+btn.addEventListener("click",onClick);
 
 function onClick() {
   if (typeof DeviceMotionEvent.requestPermission === 'function') {
