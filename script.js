@@ -11,9 +11,9 @@ function handleOrientation(event) {
 btn.addEventListener("click",onClick);
 
 function onClick() {
-  if (typeof DeviceMotionEvent.requestPermission === 'function') {
+  if (typeof DeviceOrientationEvent.requestPermission === 'function') {
     // Handle iOS 13+ devices.
-    DeviceMotionEvent.requestPermission()
+    DeviceOrientationEvent.requestPermission()
       .then((state) => {
         if (state === 'granted') {
           window.addEventListener('devicemotion', handleOrientation);
